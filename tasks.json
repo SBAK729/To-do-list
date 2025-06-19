@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Python Recap",
+        "description": "complete python recap section",
+        "due_date": "2025-06-18",
+        "completed": true
+    },
+    {
+        "id": 2,
+        "title": "Geni AI",
+        "description": "complete Geni Ai section",
+        "due_date": "2025-06-19",
+        "completed": false
+    },
+    {
+        "id": 3,
+        "title": "Introduction to LLMs",
+        "description": "complete introduction to LLMs section",
+        "due_date": "2025-06-19",
+        "completed": false
+    }
+]
