@@ -1,12 +1,18 @@
-import datetime
+from datetime import datetime, date
 
 class Task:
 
     def __init__(self, id, title, description, due_date=None, completed=False):
+        if isinstance(due_date, str):
+            self.due_date = datetime.strptime(due_date, "%Y-%m-%d").date()
+        elif isinstance(due_date, date):
+            self.due_date = due_date
+        else:
+            self.due_date = None
+
         self.id = id
         self.title = title
         self.description = description
-        self.due_date = datetime.strptime(due_date, "%y-%m-%d").date() if due_date else None
         self.completed = completed
     
     def mark_complete(self):
