@@ -30,5 +30,8 @@ def get_next_id(tasks):
      return max((task.id for task in tasks), default=0) + 1
 
 def get_today_tasks(tasks):
-     today = date.today().isoformat()
-     return [task for task in tasks if task.due_date == today and not task.completed]
+    today = date.today()
+    return [
+        task for task in tasks
+        if task.due_date == today and not task.completed
+    ]
