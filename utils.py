@@ -15,7 +15,7 @@ def load_tasks():
         data = json.load(file)
         return [Task(**task) for task in data]
     except:
-        print("Unable to read from the file")
+        return []
     finally:
         file.close()
 
@@ -27,6 +27,8 @@ def save_tasks(tasks):
         file.close()
 
 def get_next_id(tasks):
+     if not tasks:
+          return 1
      return max((task.id for task in tasks), default=0) + 1
 
 def get_today_tasks(tasks):
