@@ -100,6 +100,8 @@ python test_utils.py
 ## 🖼️ Screenshot
 
 Here's an example of the CLI app in action:
+![CLI to do list](https://github.com/user-attachments/assets/06d03f26-29ea-449c-be8e-ef3f6ef9bdb5)
+
 
 ---
 
@@ -127,10 +129,4 @@ To-do-list/
 
 Feel free to fork or contribute to improve it! 💻
 
-```
 
----
-
-Would you like me to save this as a `.md` file or push it directly if you connect your GitHub account?
-```
-````
